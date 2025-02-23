@@ -35,7 +35,7 @@ public class CarWash {
     @ManyToOne
     private SergeliCarWash sergeliCarWashing;
     @ManyToOne
-    private ShayxontahurCarWash shayxontahurCarWashing;
+    private ShayxontohurCarWash shayxontohurCarWashing;
     @ManyToOne
     private UchtepaCarWash uchtepaCarWashing;
     @ManyToOne

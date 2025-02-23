@@ -35,7 +35,7 @@ public class CarDetails {
     @ManyToOne
     private SergeliDetail sergeliDetail;
     @ManyToOne
-    private ShayxontahurDetail shayxontahurDetail;
+    private ShayxontohurDetail shayxontohurDetail;
     @ManyToOne
     private UchtepaDetail uchtepaDetail;
     @ManyToOne
