@@ -7,5 +7,5 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface CarDetailsRepo extends JpaRepository<CarDetails, UUID> {
-    Optional<CarDetails> findByName(String name);
+    Optional<CarDetails> findByRegionName(String name);
 }

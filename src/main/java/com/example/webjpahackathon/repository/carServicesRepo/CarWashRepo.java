@@ -7,5 +7,5 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface CarWashRepo extends JpaRepository<CarWash, UUID> {
-    Optional<CarWash> findByName(String name);
+    Optional<CarWash> findByBrandName(String name);
 }

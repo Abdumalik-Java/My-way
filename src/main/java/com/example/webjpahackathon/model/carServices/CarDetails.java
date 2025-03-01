@@ -18,7 +18,7 @@ public class CarDetails {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     @Column(nullable = false)
-    private String name;
+    private String regionName;
     @Column(nullable = false)
     private String description;
 
@@ -46,6 +46,5 @@ public class CarDetails {
     private YashnabodDetail yashnabodDetail;
     @ManyToOne
     private YunusobodDetail yunusobodDetail;
-
 
 }

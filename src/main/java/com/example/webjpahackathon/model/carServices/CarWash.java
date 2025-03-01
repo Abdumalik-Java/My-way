@@ -18,7 +18,7 @@ public class CarWash {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     @Column(nullable = false)
-    private String name;
+    private String brandName;
     @Column(nullable = false)
     private String description;
 
@@ -46,6 +46,5 @@ public class CarWash {
     private YashnabodCarWash yashnabodCarWashing;
     @ManyToOne
     private YunusobodCarWash yunusobodCarWashing;
-
 
 }

@@ -11,7 +11,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class CarWashDto {
 
-    private String name;
+    private String brandName;
     private String description;
 
     private UUID bektemirCarWashingDto;

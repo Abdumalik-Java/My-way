@@ -11,7 +11,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class CarDetailsDto {
 
-    private String name;
+    private String regionName;
     private String description;
 
     private UUID bektemirDetailDto;
