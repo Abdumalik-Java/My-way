@@ -5,9 +5,13 @@ My Way is a hackathon-winning project was written by Abdumalik-Java ,moreover, d
 🌟 Features
 
 ✅ Smart Parking Finder – Locate nearby available parking spaces.
+
 ✅ Car Service Locator – Find car washes, repair shops, and maintenance centers.
+
 ✅ Real-Time Data – Get live updates on parking availability and service details.
+
 ✅ User-Friendly Interface – Easy navigation for drivers looking for quick solutions.
+
 ✅ Map Integration – View service locations and parking spots on an interactive map.
 
 🛠 Tech Stack
