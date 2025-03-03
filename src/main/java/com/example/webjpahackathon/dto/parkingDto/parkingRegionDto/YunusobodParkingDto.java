@@ -3,12 +3,9 @@ package com.example.webjpahackathon.dto.parkingDto.parkingRegionDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.CurrentTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
+import java.util.UUID;
 
 @Data
 @AllArgsConstructor
@@ -19,12 +16,8 @@ public class YunusobodParkingDto {
     private int size;
     private BigDecimal longtitute;
     private BigDecimal latitute;
-    @CreationTimestamp
-    private Timestamp createdDate;
-    @UpdateTimestamp
-    private Timestamp updatedDate;
-    @CurrentTimestamp
-    private Timestamp lastVisited;
     private String price;
+
+    private UUID placesForDisabledPeopleDto;
 
 }

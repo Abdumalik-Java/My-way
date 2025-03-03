@@ -36,22 +36,14 @@ Install PostgreSQL and create a database named myway.
 Update application.properties:
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/myway
-
 spring.datasource.username=postgres
-
 spring.datasource.password=root
 
-
 spring.jpa.hibernate.ddl-auto=update
-
 spring.jpa.show-sql=true
 
-
 springdoc.api-docs.enabled=true
-
 springdoc.swagger-ui.enabled=true
-
-
 
 3. Access the application
 Open http://localhost:8080 to use the platform.
@@ -60,7 +52,6 @@ Open http://localhost:8080 to use the platform.
 
 Access the API Docs
 Swagger UI: http://localhost:8080/swagger-ui.html
-
 Raw OpenAPI JSON: http://localhost:8080/v3/api-docs
 
 📜 License
