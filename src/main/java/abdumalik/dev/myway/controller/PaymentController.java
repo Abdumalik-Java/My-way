@@ -1,7 +1,7 @@
 package abdumalik.dev.myway.controller;
 
-import abdumalik.dev.myway.dto.CarDto;
-import abdumalik.dev.myway.service.CarService;
+import abdumalik.dev.myway.dto.PaymentDto;
+import abdumalik.dev.myway.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
@@ -12,40 +12,40 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/car")
-public class CarController {
+@RequestMapping("/payment")
+public class PaymentController {
 
     @Autowired
-    CarService carService;
+    PaymentService service;
 
     @GetMapping
     @PreAuthorize("hasAnyRole('SUPERADMIN','ADMIN','USER')")
     public HttpEntity<?> readAll() {
-        return new ResponseEntity<>(carService.findAll(), HttpStatus.OK);
+        return new ResponseEntity<>(service.findAll(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
     @PreAuthorize("hasAnyRole('SUPERADMIN','ADMIN','USER')")
     public HttpEntity<?> readOne(@PathVariable UUID id) {
-        return new ResponseEntity<>(carService.findById(id), HttpStatus.OK);
+        return new ResponseEntity<>(service.findById(id), HttpStatus.OK);
     }
 
     @PostMapping
     @PreAuthorize("hasAnyRole('SUPERADMIN','ADMIN')")
-    public HttpEntity<?> create(@RequestBody CarDto carDto) {
-        return new ResponseEntity<>(carService.create(carDto), HttpStatus.CREATED);
+    public HttpEntity<?> create(@RequestBody PaymentDto paymentDto) {
+        return new ResponseEntity<>(service.create(paymentDto), HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
     @PreAuthorize("hasAnyRole('SUPERADMIN','ADMIN')")
-    public HttpEntity<?> update(@PathVariable UUID id, @RequestBody CarDto carDto) {
-        return new ResponseEntity<>(carService.update(id, carDto), HttpStatus.OK);
+    public HttpEntity<?> update(@PathVariable UUID id, @RequestBody PaymentDto paymentDto) {
+        return new ResponseEntity<>(service.update(id, paymentDto), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasAnyRole('SUPERADMIN','ADMIN')")
     public HttpEntity<?> delete(@PathVariable UUID id) {
-        return new ResponseEntity<>(carService.delete(id), HttpStatus.OK);
+        return new ResponseEntity<>(service.delete(id), HttpStatus.OK);
     }
 
 }

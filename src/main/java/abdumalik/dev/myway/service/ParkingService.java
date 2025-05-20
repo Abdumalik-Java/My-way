@@ -22,7 +22,7 @@ public class ParkingService {
     @Autowired
     PaymentRepo payRepo;
 
-    public List<Parking> getAllParkings() {
+    public List<Parking> getAllParking() {
         return repo.findAll();
     }
 
